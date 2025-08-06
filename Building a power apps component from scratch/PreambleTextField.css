@@ -1,0 +1,19 @@
+/* PreambleTextField.css */
+.preamble-textfield-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 4px 0;
+  gap: 8px;
+}
+
+.ms-style-singleline {
+  height: 32px;
+  padding: 0 8px;  
+  box-sizing: border-box;
+  border-radius: 4px;
+  flex-grow: 1;
+  border-style: none;
+  background-color: var(--colorNeutralBackground3);
+}

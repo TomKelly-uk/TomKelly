@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="PreambleTextField" constructor="PreambleTextField" version="0.0.1" display-name-key="PreambleTextField" description-key="PreambleTextField description" control-type="standard" >
+    <external-service-usage enabled="false">
+      <!-- No external domains needed for a simple text field -->
+    </external-service-usage>
+  
+    <!-- Optional: Configurable placeholder property -->
+    <property 
+      name="ColumnInput" 
+      display-name-key="Column Input" 
+      description-key="Select the column to bind the input value to." 
+      of-type="SingleLine.Text" 
+      usage="bound" 
+      required="false" 
+    />
+
+    <property 
+      name="placeholder" 
+      display-name-key="Placeholder" 
+      description-key="Enter the placeholder text that you want to appear in the input field. Will be replaced when user types." 
+      of-type="SingleLine.Text" 
+      usage="input" 
+      required="false" 
+    />
+    
+    <resources>
+      <code path="index.ts" order="1"/>
+      <css path="css/PreambleTextField.css" order="1"/>
+    </resources>
+  </control>
+</manifest>
